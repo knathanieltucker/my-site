@@ -1,0 +1,155 @@
+body {
+	background-image: url('brickwall.png');
+}
+
+.homePg, .aboutPg, .tradingPg, .researchPg, .contactPg{
+	height: 1200px;
+}
+
+.homePg {
+	padding-top: 200px;
+}
+
+.aboutPg, .tradingPg, .researchPg, .contactPg {
+	/*text-align: center;*/
+
+	font-family: Georgia;
+	font-size: 1.05em;
+	line-height: 2;
+}
+
+.aboutPg p, .tradingPg p, .researchPg p, .contactPg p {
+	/*text-align: center;*/
+	padding-top: 200px;
+
+}
+
+.tradingPg ul {
+
+	list-style: none;
+}
+
+.tradingPg a {
+	text-decoration: none;
+	color: #7a072e;
+	font-size: 1.3em;
+
+}
+
+.tradingPg a:hover {
+	text-decoration: none;
+	color: #7a072e;
+	font-weight: bold;
+}
+
+.researchPg ul li a{
+	display: inline;
+	font-family: Georgia;
+	font-size: 1.05em;
+	line-height: 2;
+	text-decoration: none;
+	color: #555555;
+}
+
+.contactPg ul li a{
+	font-family: Georgia;
+	font-size: 1.05em;
+	line-height: 2;
+	text-decoration: none;
+	color: #555555;
+}
+
+.contactPg ul li a:hover{
+	color: #7a072e;
+}
+
+.contactPg ul li{
+	text-align: center;
+	display: inline;
+	padding: 10px;
+}
+
+.researchPg ul li a:hover{
+	color: #7a072e;
+}
+
+.researchPg ul li{
+	text-align: center;
+	display: block;
+}
+
+.masthead {
+	background-image: url('TransBrick.png');
+	margin-top: -210px;
+	text-align: center;
+	padding: 0 0 0 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+}
+
+.menu {
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 5px 0 0 0;
+ }
+
+.menu li {
+	display: inline;
+	padding: 0 9px;
+	font-size: 1.2em;
+}
+
+
+.masthead a {
+	/*font-family: 'Trebuchet MS';*/
+	/*/*font-family: 'Lucida Grande';*/
+	font-family: 'Lucida sans unicode', sans-serif;
+	text-decoration: none;
+	color: #555555;
+}
+
+.masthead a:hover {
+	color: #7a072e;
+}
+
+h1 {
+	font-size: 2.7em;
+}
+
+.banner {
+	box-shadow: 0px 4px 5px #A3A3A3;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.banner img {
+	height: 350px;
+	display: block;
+	margin: auto;
+}
+
+.no-svg{
+	display: block;
+	width: 300px;
+	margin: auto;
+}
+
+.fc-webicon { 
+	display: inline-block; 
+	background-size: 100%; 
+	width: 30px; height: 30px; 
+	text-indent: -999em; 
+	text-align: left; 
+	-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); 
+	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); 
+	-moz-border-radius: 100%; 
+	-webkit-border-radius: 100%; 
+	border-radius: 100%; 
+	margin-bottom: 5px;
+}
+
+
+
