@@ -1,0 +1,33 @@
+
+
+header div h3 {
+  color: #04B4AE;
+  font-size: 1.7em;
+}
+
+header div h2 {
+  padding-left: 10px;
+  font-size: 2em;
+}
+
+nav ul {
+  color: #fff;
+  font-family: 'Candal', sans-serif;
+}
+
+body {
+  font-family: 'Inconsolata', sans-serif;
+}
+
+dl {
+  font-family: 'Candal', sans-serif;
+}
+
+article ul {
+  text-align: center;
+  list-style: none;
+}
+
+#contact li {
+  display: inline;
+}
