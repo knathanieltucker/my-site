@@ -31,3 +31,12 @@ article ul {
 #contact li {
   display: inline;
 }
+
+fieldset ul {
+  text-align: left;
+}
+
+fieldset {
+  border: 0;
+  border-top: 1px #999 solid;
+}
