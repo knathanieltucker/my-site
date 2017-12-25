@@ -33,21 +33,36 @@
       gtag('config', 'UA-111600808-1');
     </script>
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MDXDQ8H');</script>
-    <!-- End Google Tag Manager -->
+    <script>
+      /**
+      * Function that tracks a click on an outbound link in Analytics.
+      * This function takes a valid URL string as an argument, and uses that URL string
+      * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+      * using 'navigator.sendBeacon' in browser that support it.
+      */
+      var trackOutboundLink = function(url) {
+        gtag('event', 'click', {
+          'event_category': 'outbound',
+          'event_label': url,
+          'transport_type': 'beacon',
+          'event_callback': function(){document.location = url;}
+        });
+      }
+    </script>
+
+    <script type=”text/javascript“>
+      var a = document.getElementsByTagName(‘a’);
+      for(i = 0; i < a.length; i++)
+        if (a[i].href.indexOf(location.host) == -1 && a[i].href.match('/^http:///i'))
+          a[i].onclick = function() {
+            trackOutboundLink(a[i].href);
+            return false;
+          }
+    </script>
 
   </head>
 
   <body id="page-top">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDXDQ8H"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -93,7 +108,7 @@
           <div class="subheading mb-5">San Francisco · Bay Area ·
             <a href="mailto:k.nathaniel.tucker@gmail.com">k.nathaniel.tucker@gmail.com</a>
           </div>
-          <p class="mb-5">I am an AI Researcher at <a href="https://www.vicarious.com" onclick="trackOutboundLink('http://www.example.com'); return false;">Vicarious</a>.
+          <p class="mb-5">I am an AI Researcher at <a href="https://www.vicarious.com">Vicarious</a>.
             I was a Computer Science Concentrator at <a href="https://www.harvard.edu">Harvard University</a> in the School of Engineering and Applied Sciences where I received my A.B. and S.M. in Computer Science.
             While there I ran the Harvard College's first club on quantitative finance and research.
             Previously, I worked at <a href="https://www.janestreet.com/">Jane Street Capital</a>, a hedge fund in New York.
