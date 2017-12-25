@@ -1,209 +1,374 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-	<meta charset="utf-8" />
+  <head>
 
-	<!-- Set the viewport width to device width for mobile -->
-	<meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <title>tucker</title>
 
-	<title>K. Nathaniel Tucker</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-	<!-- Included CSS Files -->
-  <link rel="stylesheet" href="stylesheets/app.css">
-  <link rel="stylesheet" href="stylesheets/offcanvas.css">
-  <link rel="stylesheet" href="stylesheets/main.css">
-  <link href='http://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-  <script src="javascripts/foundation/modernizr.foundation.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
 
-</head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111600808-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  <body id="page" class="off-canvas paneled">
-	<div class="container">
+      gtag('config', 'UA-111600808-1');
+    </script>
 
-		<header id="header" class="row">
-		  <div class="four columns">
-		    <h3>my site</h3>
-              <h2 id="site-title">K. N. Tucker</h2>
-		  </div>
-		  <div class="eight columns">
-		    <nav id="menu" role="navigation" class="hide-for-small">
-  				<ul id="nav" class="nav-bar">
-  					<li><a href="#panel-1" class="main nav-item">about</a></li>
-  					<li><a href="#panel-2" class="main nav-item">projects</a></li>
-  					<li><a href="#panel-3" class="main nav-item">research</a></li>
-  					<li><a href="#panel-4" class="main nav-item">contact</a></li>
-  				</ul>
-  			</nav>
+  </head>
 
-  			<dl class="tabs five-up show-for-small" id="switchPanels">
-          <dd class="active"><a href="#panel-1">about</a></dd>
-          <dd><a href="#panel-2">projects</a></dd>
-          <dd><a href="#panel-3">research</a></dd>
-          <dd><a href="#panel-4">contact</a></dd>
-  			</dl>
-		  </div>
-		</header>
+  <body id="page-top">
 
-		<div class="row">
-  		<section role="main" id="main">
-  		  <article id="panel-1" class="page-panel">
-			   <h4>about</h4>
-			   <p>I am a SWE doing Big Data and Deep Learning at Google. I was a Computer Science Concentrator at Harvard University in the School of Engineering and Applied Sciences where I received my A.B. and S.M. in Computer Science. I ran the Harvard College's first club on quantitative finance and research. I also spend my time doing research and working on projects. </p>
-
-                      <p>Previously, I worked at <a href="https://www.janestreet.com/">Jane Street Capital</a>, a hedge fund in New York. I also worked at <a href="http://www.goldmansachs.com/">Goldman Sachs</a> , <a href="https://www.facebook.com/">Facebook</a> (where I developed a product that made the team 38 million dollars per annum), and <a href="http://www.microsoft.com/en-us/">Microsoft</a> (where I finished with an org wide presentation to over 100 people). While in school, I worked part-time for a few startups (like <a href="https://kensho.com/#/">Kensho</a>) and have devoted some time to starting my own. You can read more about that in the projects section.</p>
-
-                      <p>My research in school focused primarily on theoretical computer science. However I have always had a great interest in biology and economics, and will soon have a paper published there as well. Please see my research for more details</p>
-			</article><!-- /#panel-1 -->
-
-
-  			<article id="panel-2" class="page-panel">
-  				<h4>projects</h4>
-
-
-
-                      <p>An exercise in robust web development</p>
-
-                      <ul>
-                        <li><a href="http://htmlpreview.github.io/?https://github.com/knathanieltucker/robust_web_client/blob/master/javascript/harness.html">A Robust Web Client</a></li>
-                      </ul>
-
-                      Read more <a href="https://github.com/knathanieltucker/robust_web_client/blob/master/markdown/notify.md">here</a>
-                      <br/>
-                      <br/>
-                      <p>Name Generation and Recognition</p>
-
-                      <ul>
-                        <li><a href=" https://github.com/tensorflow/models/tree/master/namignizer">Namignizer</a></li>
-                      </ul>
-
-                      Read more <a href="https://github.com/tensorflow/models/blob/master/namignizer/README.md">here</a>
-
-                      <br/>
-                      <br/>
-                      <p>Sentence Embeddings</p>
-
-                      <ul>
-                        <li><a href=" https://github.com/tensorflow/models/pull/678">Skip Thought</a></li>
-                      </ul>
-
-                      Read more <a href="https://github.com/knathanieltucker/models/blob/09b8dfdc6cd1ec4532ed34c16c768f6e2817eb1d/skipthought/README.md">here</a>
-
-                      <br/>
-                      <br/>
-                      <p>A Meteor Package: define Publications in a structured way, with mixins</p>
-
-                      <ul>
-                        <li><a href="https://atmospherejs.com/gnil/validated-publish">gnil:validated-publish</a></li>
-                      </ul>
-
-                      Read more <a href="https://github.com/knathanieltucker/validated-publish">here</a>
-
-                      <br/>
-                      <br/>
-                      <p>Full stack meteor web app</p>
-
-                      <ul>
-                        <li><a href="https://www.palatineanalytics.com/#!">Palatine Analytics</a></li>
-                      </ul>
-
-                      Feel free to check it out!
-
-                      <br/>
-                      <br/>
-                      <p>Deep learning paper list</p>
-
-                      <ul>
-                        <li><a href="https://github.com/knathanieltucker/deeplearning-papernotes">The list</a></li>
-                      </ul>
-
-                      I update this occasionally so check back in!
-<!--
-                      <p>For those more interested in technology and startups, I am also working on another idea. The idea is called stances. It is currently in the works, so when you have a chance, please check out:
-
-
-                      	<ul>
-                      	  <li><a href="http://www.stances.us/">stances</a></li>
-                      	</ul>
- -->
-
-                      </p>
-
-  		  </article><!-- /#panel-2 -->
-
-
-			  <article id="panel-3" class="page-panel">
-				  <h4>research</h4>
-				  <fieldset>
-                          <legend>
-                            <span> computer science </span>
-                          </legend>
-				     <ul>
-				             <li><a href="research/Modifying_SIPS_for_a_Bounded_Loss_Prediction_Market_on_the_Real_Line.pdf">Modifying SIPS For A Bounded Loss Prediction Market On The Real Line</a> Perry A. Green, K. Nathaniel Tucker. December 2012. </li>
-				             <li><a href="research/Efﬁciency_in_Two-Candidate_Elections_with_Differential_Privacy.pdf">Efﬁciency In Two-Candidate Elections With Differential Privacy</a> Perry A. Green, K. Nathaniel Tucker, Matthew Warshauer. May 2013. </li>
-				             <li><a href="research/Cooperative_multi-agent_path_planning_under_strict_real-time_constraints.pdf">Cooperative Multi-agent Path Planning Under Strict Real-time Constraints</a> Svilen Kanev, K. Nathaniel Tucker. May 2013. </li>
-				             <li><a href="research/Approximate_Stochastic_Constraint_Solvers_over_Watts-Strogatz_Network_Topologies.pdf">Approximate Stochastic Constraint Solvers over Watts-Strogatz Network Topologies</a> K. Nathaniel Tucker. December 2013.</li>
-				             <li><a href="research/Approximate_Influence_Maximization_Distributed_Constraint_Optimization_Problem.pdf">Approximate Influence Maximization as a Distributed Constraint Optimization Problem</a> Michael Tingley, K. Nathaniel Tucker. December 2013.</li>
-                                       <li><a href="research/empirical_analysis_of_randomized_leader_elections.pdf">Empirical Analysis of Randomized Leader Elections</a> K. Nathaniel Tucker. May 2015.</li>
-                                       <li><a href="research/examination_of_data_based_concurrency_bug_detection.pdf">Examination of Data Based Concurrency Bug Detection</a> Jefferson Lee, K. Nathaniel Tucker. May 2015.</li>
-				         </ul>
-                        </fieldset>
-                        <fieldset>
-                          <legend>
-                            <span> finance </span>
-                          </legend>
-				         <ul>
-				             <li><a href="research/South_Africa_Energy.pdf">South Africa Energy Market</a> K. Nathaniel Tucker. September 2013. </li>
-				             <li><a href="http://nbviewer.ipython.org/github/knathanieltucker/209fp/blob/master/final.ipynb">A Quantitative Approach to Finance</a> Chris Dantzlerward, Sam Meyer, K. Nathaniel Tucker. December 2013. </li>
-				         </ul>
-                        </fieldset>
-
-				</article><!-- /#panel-3 -->
-
-
-			  <article id="panel-4" class="page-panel">
-                        <h4>contact</h4>
-				  <p>Feel free to contact me via any of the means provided, I would love to hear your input. </p>
-				        <ul id="contact">
-				          <li><a href="mailto:k.nathaniel.tucker@gmail.com">Mail</a></li>
-				          <li><a href="https://github.com/knathanieltucker">Github</a>    </li>
-				          <li><a href="https://www.facebook.com/k.nathaniel.tucker">Facebook</a></li>
-				          <li><a href="http://www.linkedin.com/profile/view?id=259629315&trk=tab_pro">Linkedin</a></li>
-				          <!-- <li><a href="http://stackoverflow.com/users/2524930/user2524930">Stack Overflow</a></li> -->
-
-				        </ul>
-				</article><!-- /#panel-4 -->
-
-
-		  </section>
-		</div>
-
-    <footer class="site-footer row" role="contentinfo">
-      <div class="twelve columns">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">tucker</span>
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#research">Research</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+          </li> -->
+        </ul>
       </div>
-    </footer>
-  </div>
+    </nav>
 
+    <div class="container-fluid p-0">
 
-	<!-- Included JS Files -->
-  <script src="javascripts/foundation/jquery.js"></script>
-  <script src="javascripts/foundation/jquery.foundation.reveal.js"></script>
-  <script src="javascripts/foundation/jquery.foundation.orbit.js"></script>
-  <script src="javascripts/foundation/jquery.foundation.forms.js"></script>
-  <script src="javascripts/foundation/jquery.placeholder.js"></script>
-  <script src="javascripts/foundation/jquery.foundation.tooltips.js"></script>
-  <script src="javascripts/foundation/jquery.foundation.alerts.js"></script>
-  <script src="javascripts/foundation/jquery.foundation.buttons.js"></script>
-  <script src="javascripts/foundation/jquery.foundation.accordion.js"></script>
-  <script src="javascripts/foundation/jquery.foundation.navigation.js"></script>
-  <script src="javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
-  <script src="javascripts/foundation/jquery.foundation.tabs.js"></script>
-  <script src="javascripts/foundation/jquery.offcanvas.js"></script>
-  <script src="javascripts/foundation/app.js"></script>
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+          <h1 class="mb-0">K. N.
+            <span class="text-primary">Tucker</span>
+          </h1>
+          <div class="subheading mb-5">San Francisco · Bay Area ·
+            <a href="mailto:k.nathaniel.tucker@gmail.com">k.nathaniel.tucker@gmail.com</a>
+          </div>
+          <p class="mb-5">I am an AI Researcher at <a href="https://www.vicarious.com" onclick="trackOutboundLink('http://www.example.com'); return false;">Vicarious</a>.
+            I was a Computer Science Concentrator at <a href="https://www.harvard.edu">Harvard University</a> in the School of Engineering and Applied Sciences where I received my A.B. and S.M. in Computer Science.
+            While there I ran the Harvard College's first club on quantitative finance and research.
+            Previously, I worked at <a href="https://www.janestreet.com/">Jane Street Capital</a>, a hedge fund in New York.
+            I also worked at <a href="http://www.goldmansachs.com/">Goldman Sachs</a> , <a href="https://www.facebook.com/">Facebook</a> (where I developed a product that made the team 38 million dollars per annum), <a href="http://www.microsoft.com/en-us/">Microsoft</a>, and <a href="http://www.bing.com/">Google</a>.
+            While in school, I worked part-time for a few startups (like <a href="https://kensho.com/#/">Kensho</a>) and have devoted some time to starting my own.
+            You can read more about that in the projects section.
+            My research in school focused primarily on theoretical computer science.
+            However I have always had a great interest in biology and economics, and will soon have a paper published there as well.
+            Please see my research for more details.
+            I am an avid reader and learner.
+            I teach part time at <a href="https://generalassemb.ly">General Assembly</a> and am developing open source teaching material for <a href="https://www.youtube.com/channel/UCQTQ0AbOupKNxKKY-_x46OQ">data science and machine learning </a>.
+            I currently spend most of my time working at <a href="https://www.vicarious.com">Vicarious</a>, creating educational content for my <a href="https://www.youtube.com/channel/UCQTQ0AbOupKNxKKY-_x46OQ">YouTube Channel</a> and doing data science consulting.
+          </p>
+          <p class="mb-5">
+            I do data science <b>consulting</b>, <b>education</b>, and <b>strategy</b> work as well, so if you have an interesting project, don't hesitate to reach out.
+            Or if you are just interested in collaborating, check out my <a href="https://github.com/knathanieltucker/github#collaborators">github collaboration page</a> to check out my active projects and reach out.
+          </p>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="https://www.youtube.com/channel/UCQTQ0AbOupKNxKKY-_x46OQ">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/knatetucker">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/k-nathaniel-tucker-543b4872/">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/knathanieltucker/github#github">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="mailto:k.nathaniel.tucker@gmail.com">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-</body>
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+        <div class="my-auto">
+          <h2 class="mb-5">Projects</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">YouTube Channel</h3>
+              <div class="subheading mb-3"><a href="https://www.youtube.com/channel/UCQTQ0AbOupKNxKKY-_x46OQ">Link</a></div>
+              <p>All sorts of goodies from machine learning to data science with a bit of a focus on deep learning, but with all the goodness in between. I strongly urge you to just check it out.</p>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Bootstrapping.py</h3>
+              <div class="subheading mb-3"><a href="https://github.com/knathanieltucker/bootstrapping#bootstrapping">GitHub Repo</a></div>
+              <p>Bootstrapping (or perhaps better named: computational statistical inference in python). I am building out a bootstrapping library for data scientists. Very early stages. And actively looking for collaborators.</p>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Deep learning paper list</h3>
+              <div class="subheading mb-3"><a href="https://github.com/knathanieltucker/deeplearning-papernotes">GitHub Repo</a></div>
+              <p>A list of deep learning papers that I have read with notes.</p>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">See More</h3>
+              <div class="subheading mb-3"><a href="https://github.com/knathanieltucker/github#github">GitHub Repo</a></div>
+              <p>I just wanted to highlight the above. This contains the full list, along with my <a href="https://github.com/knathanieltucker/github#collaborators">github collaboration page</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="research">
+        <div class="my-auto">
+          <h2 class="mb-5">Research</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Modifying SIPS For A Bounded Loss Prediction Market On The Real Line</h3>
+              <div class="subheading mb-3"><a href="research/Modifying_SIPS_for_a_Bounded_Loss_Prediction_Market_on_the_Real_Line.pdf">Paper Link</a></div>
+              <div>Perry A. Green, K. Nathaniel Tucker. December 2012.</div>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Efﬁciency In Two-Candidate Elections With Differential Privacy</h3>
+              <div class="subheading mb-3"><a href="research/Efﬁciency_in_Two-Candidate_Elections_with_Differential_Privacy.pdf">Paper Link</a></div>
+              <div>Perry A. Green, K. Nathaniel Tucker, Matthew Warshauer. May 2013.</div>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Cooperative Multi-agent Path Planning Under Strict Real-time Constraints</h3>
+              <div class="subheading mb-3"><a href="research/Cooperative_multi-agent_path_planning_under_strict_real-time_constraints.pdf">Paper Link</a></div>
+              <div>Svilen Kanev, K. Nathaniel Tucker. May 2013.</div>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">South Africa Energy Market</h3>
+              <div class="subheading mb-3"><a href="research/South_Africa_Energy.pdf">Paper Link</a></div>
+              <div> K. Nathaniel Tucker. September 2013.</div>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">A Quantitative Approach to Finance</h3>
+              <div class="subheading mb-3"><a href="http://nbviewer.ipython.org/github/knathanieltucker/209fp/blob/master/final.ipynb">Notebook Link</a></div>
+              <div> Chris Dantzlerward, Sam Meyer, K. Nathaniel Tucker. December 2013. </div>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Approximate Stochastic Constraint Solvers over Watts-Strogatz Network Topologies</h3>
+              <div class="subheading mb-3"><a href="research/Approximate_Stochastic_Constraint_Solvers_over_Watts-Strogatz_Network_Topologies.pdf">Paper Link</a></div>
+              <div>K. Nathaniel Tucker. December 2013.</div>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Empirical Analysis of Randomized Leader Elections</h3>
+              <div class="subheading mb-3"><a href="research/empirical_analysis_of_randomized_leader_elections.pdf">Paper Link</a></div>
+              <div>K. Nathaniel Tucker. May 2015.</div>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Examination of Data Based Concurrency Bug Detection</h3>
+              <div class="subheading mb-3"><a href="research/examination_of_data_based_concurrency_bug_detection.pdf">Paper Link</a></div>
+              <div>Jefferson Lee, K. Nathaniel Tucker. May 2015.</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="my-auto">
+          <h2 class="mb-5">Skills</h2>
+
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline list-icons">
+            <li class="list-inline-item">
+              <i class="devicons devicons-html5"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-css3"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-javascript"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-jquery"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-sass"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-less"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-bootstrap"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-wordpress"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-grunt"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-gulp"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicons devicons-npm"></i>
+            </li>
+          </ul>
+
+          <div class="subheading mb-3">Workflow</div>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Mobile-First, Responsive Design</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Browser Testing &amp; Debugging</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Cross Functional Teams</li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              Agile Development &amp; Scrum</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
+        <div class="my-auto">
+          <h2 class="mb-5">Interests</h2>
+          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
+          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+        <div class="my-auto">
+          <h2 class="mb-5">Awards &amp; Certifications</h2>
+          <ul class="fa-ul mb-0">
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Google Analytics Certified Developer</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              Mobile Web Specialist - Google Certification</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              2<sup>nd</sup>
+              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
+            <li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              1<sup>st</sup>
+              Place - James Buchanan High School - Hackathon 2006</li>
+            <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              3<sup>rd</sup>
+              Place - James Buchanan High School - Hackathon 2005</li>
+          </ul>
+        </div>
+      </section> -->
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+
+  </body>
+
+</html>
