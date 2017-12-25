@@ -33,23 +33,21 @@
       gtag('config', 'UA-111600808-1');
     </script>
 
-    <script>
-      /**
-      * Function that tracks a click on an outbound link in Analytics.
-      * This function takes a valid URL string as an argument, and uses that URL string
-      * as the event label. Setting the transport method to 'beacon' lets the hit be sent
-      * using 'navigator.sendBeacon' in browser that support it.
-      */
-      var trackOutboundLink = function(url) {
-         ga('send', 'event', 'outbound', 'click', url, {
-           'transport': 'beacon',
-           'hitCallback': function(){document.location = url;}
-         });
-      }
-    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MDXDQ8H');</script>
+    <!-- End Google Tag Manager -->
+
   </head>
 
   <body id="page-top">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDXDQ8H"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -93,29 +91,29 @@
             <span class="text-primary">Tucker</span>
           </h1>
           <div class="subheading mb-5">San Francisco · Bay Area ·
-            <a onclick="trackOutboundLink('mail-top'); return false;" href="mailto:k.nathaniel.tucker@gmail.com">k.nathaniel.tucker@gmail.com</a>
+            <a href="mailto:k.nathaniel.tucker@gmail.com">k.nathaniel.tucker@gmail.com</a>
           </div>
-          <p class="mb-5">I am an AI Researcher at <a onclick="trackOutboundLink('vic'); return false;" href="https://www.vicarious.com">Vicarious</a>.
-            I was a Computer Science Concentrator at <a onclick="trackOutboundLink('harvard'); return false;" href="https://www.harvard.edu">Harvard University</a> in the School of Engineering and Applied Sciences where I received my A.B. and S.M. in Computer Science.
+          <p class="mb-5">I am an AI Researcher at <a href="https://www.vicarious.com" onclick="trackOutboundLink('http://www.example.com'); return false;">Vicarious</a>.
+            I was a Computer Science Concentrator at <a href="https://www.harvard.edu">Harvard University</a> in the School of Engineering and Applied Sciences where I received my A.B. and S.M. in Computer Science.
             While there I ran the Harvard College's first club on quantitative finance and research.
-            Previously, I worked at <a onclick="trackOutboundLink('jane'); return false;" href="https://www.janestreet.com/">Jane Street Capital</a>, a hedge fund in New York.
-            I also worked at <a onclick="trackOutboundLink('gold'); return false;" href="http://www.goldmansachs.com/">Goldman Sachs</a> , <a onclick="trackOutboundLink('face'); return false;" href="https://www.facebook.com/">Facebook</a> (where I developed a product that made the team 38 million dollars per annum), <a onclick="trackOutboundLink('micro'); return false;" href="http://www.microsoft.com/en-us/">Microsoft</a>, and <a onclick="trackOutboundLink('goog'); return false;" href="http://www.bing.com/">Google</a>.
-            While in school, I worked part-time for a few startups (like <a onclick="trackOutboundLink('kensho'); return false;" href="https://kensho.com/#/">Kensho</a>) and have devoted some time to starting my own.
+            Previously, I worked at <a href="https://www.janestreet.com/">Jane Street Capital</a>, a hedge fund in New York.
+            I also worked at <a href="http://www.goldmansachs.com/">Goldman Sachs</a> , <a href="https://www.facebook.com/">Facebook</a> (where I developed a product that made the team 38 million dollars per annum), <a href="http://www.microsoft.com/en-us/">Microsoft</a>, and <a href="http://www.bing.com/">Google</a>.
+            While in school, I worked part-time for a few startups (like <a href="https://kensho.com/#/">Kensho</a>) and have devoted some time to starting my own.
             You can read more about that in the projects section.
             My research in school focused primarily on theoretical computer science.
             However I have always had a great interest in biology and economics, and will soon have a paper published there as well.
             Please see my research for more details.
             I am an avid reader and learner.
-            I teach part time at <a onclick="trackOutboundLink('ga'); return false;" href="https://generalassemb.ly">General Assembly</a> and am developing open source teaching material for <a onclick="trackOutboundLink('http://www.example.com'); return false;" href="https://www.youtube.com/channel/UCQTQ0AbOupKNxKKY-_x46OQ">data science and machine learning </a>.
-            I currently spend most of my time working at <a onclick="trackOutboundLink('vic'); return false;" href="https://www.vicarious.com">Vicarious</a>, creating educational content for my <a onclick="trackOutboundLink('youtube-1'); return false;" href="https://www.youtube.com/channel/UCQTQ0AbOupKNxKKY-_x46OQ">YouTube Channel</a> and doing data science consulting.
+            I teach part time at <a href="https://generalassemb.ly">General Assembly</a> and am developing open source teaching material for <a href="https://www.youtube.com/channel/UCQTQ0AbOupKNxKKY-_x46OQ">data science and machine learning </a>.
+            I currently spend most of my time working at <a href="https://www.vicarious.com">Vicarious</a>, creating educational content for my <a href="https://www.youtube.com/channel/UCQTQ0AbOupKNxKKY-_x46OQ">YouTube Channel</a> and doing data science consulting.
           </p>
           <p class="mb-5">
             I do data science <b>consulting</b>, <b>education</b>, and <b>strategy</b> work as well, so if you have an interesting project, don't hesitate to reach out.
-            Or if you are just interested in collaborating, check out my <a onclick="trackOutboundLink('colab-1'); return false;" href="https://github.com/knathanieltucker/github#collaborators">github collaboration page</a> to check out my active projects and reach out.
+            Or if you are just interested in collaborating, check out my <a href="https://github.com/knathanieltucker/github#collaborators">github collaboration page</a> to check out my active projects and reach out.
           </p>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
-              <a onclick="trackOutboundLink('youtube-fa'); return false;" href="https://www.youtube.com/channel/UCQTQ0AbOupKNxKKY-_x46OQ">
+              <a href="https://www.youtube.com/channel/UCQTQ0AbOupKNxKKY-_x46OQ">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
@@ -123,7 +121,7 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a onclick="trackOutboundLink('twitter-fa'); return false;" href="https://twitter.com/knatetucker">
+              <a href="https://twitter.com/knatetucker">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -131,7 +129,7 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a onclick="trackOutboundLink('linkedin-fa'); return false;" href="https://www.linkedin.com/in/k-nathaniel-tucker-543b4872/">
+              <a href="https://www.linkedin.com/in/k-nathaniel-tucker-543b4872/">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -139,7 +137,7 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a onclick="trackOutboundLink('github-fa'); return false;" href="https://github.com/knathanieltucker/github#github">
+              <a href="https://github.com/knathanieltucker/github#github">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -147,7 +145,7 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a onclick="trackOutboundLink('mail-fa'); return false;" href="mailto:k.nathaniel.tucker@gmail.com">
+              <a href="mailto:k.nathaniel.tucker@gmail.com">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
@@ -165,7 +163,7 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">YouTube Channel</h3>
-              <div class="subheading mb-3"><a onclick="trackOutboundLink('youtube-project'); return false;" href="https://www.youtube.com/channel/UCQTQ0AbOupKNxKKY-_x46OQ">Link</a></div>
+              <div class="subheading mb-3"><a href="https://www.youtube.com/channel/UCQTQ0AbOupKNxKKY-_x46OQ">Link</a></div>
               <p>All sorts of goodies from machine learning to data science with a bit of a focus on deep learning, but with all the goodness in between. I strongly urge you to just check it out.</p>
             </div>
           </div>
@@ -173,7 +171,7 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Bootstrapping.py</h3>
-              <div class="subheading mb-3"><a onclick="trackOutboundLink('bootstrapping'); return false;" href="https://github.com/knathanieltucker/bootstrapping#bootstrapping">GitHub Repo</a></div>
+              <div class="subheading mb-3"><a href="https://github.com/knathanieltucker/bootstrapping#bootstrapping">GitHub Repo</a></div>
               <p>Bootstrapping (or perhaps better named: computational statistical inference in python). I am building out a bootstrapping library for data scientists. Very early stages. And actively looking for collaborators.</p>
             </div>
           </div>
@@ -181,7 +179,7 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Deep learning paper list</h3>
-              <div class="subheading mb-3"><a onclick="trackOutboundLink('deep-paper'); return false;" href="https://github.com/knathanieltucker/deeplearning-papernotes">GitHub Repo</a></div>
+              <div class="subheading mb-3"><a href="https://github.com/knathanieltucker/deeplearning-papernotes">GitHub Repo</a></div>
               <p>A list of deep learning papers that I have read with notes.</p>
             </div>
           </div>
@@ -189,8 +187,8 @@
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">See More</h3>
-              <div class="subheading mb-3"><a onclick="trackOutboundLink('github'); return false;" href="https://github.com/knathanieltucker/github#github">GitHub Repo</a></div>
-              <p>I just wanted to highlight the above. This contains the full list, along with my <a onclick="trackOutboundLink('colab'); return false;" href="https://github.com/knathanieltucker/github#collaborators">github collaboration page</a>.</p>
+              <div class="subheading mb-3"><a href="https://github.com/knathanieltucker/github#github">GitHub Repo</a></div>
+              <p>I just wanted to highlight the above. This contains the full list, along with my <a href="https://github.com/knathanieltucker/github#collaborators">github collaboration page</a>.</p>
             </div>
           </div>
 
@@ -205,7 +203,7 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Modifying SIPS For A Bounded Loss Prediction Market On The Real Line</h3>
-              <div class="subheading mb-3"><a onclick="trackOutboundLink('paper-1'); return false;" href="research/Modifying_SIPS_for_a_Bounded_Loss_Prediction_Market_on_the_Real_Line.pdf">Paper Link</a></div>
+              <div class="subheading mb-3"><a href="research/Modifying_SIPS_for_a_Bounded_Loss_Prediction_Market_on_the_Real_Line.pdf">Paper Link</a></div>
               <div>Perry A. Green, K. Nathaniel Tucker. December 2012.</div>
             </div>
           </div>
@@ -213,7 +211,7 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Efﬁciency In Two-Candidate Elections With Differential Privacy</h3>
-              <div class="subheading mb-3"><a onclick="trackOutboundLink('paper-2'); return false;" href="research/Efﬁciency_in_Two-Candidate_Elections_with_Differential_Privacy.pdf">Paper Link</a></div>
+              <div class="subheading mb-3"><a href="research/Efﬁciency_in_Two-Candidate_Elections_with_Differential_Privacy.pdf">Paper Link</a></div>
               <div>Perry A. Green, K. Nathaniel Tucker, Matthew Warshauer. May 2013.</div>
             </div>
           </div>
@@ -221,7 +219,7 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Cooperative Multi-agent Path Planning Under Strict Real-time Constraints</h3>
-              <div class="subheading mb-3"><a onclick="trackOutboundLink('paper-3'); return false;" href="research/Cooperative_multi-agent_path_planning_under_strict_real-time_constraints.pdf">Paper Link</a></div>
+              <div class="subheading mb-3"><a href="research/Cooperative_multi-agent_path_planning_under_strict_real-time_constraints.pdf">Paper Link</a></div>
               <div>Svilen Kanev, K. Nathaniel Tucker. May 2013.</div>
             </div>
           </div>
@@ -229,7 +227,7 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">South Africa Energy Market</h3>
-              <div class="subheading mb-3"><a onclick="trackOutboundLink('paper-4'); return false;" href="research/South_Africa_Energy.pdf">Paper Link</a></div>
+              <div class="subheading mb-3"><a href="research/South_Africa_Energy.pdf">Paper Link</a></div>
               <div> K. Nathaniel Tucker. September 2013.</div>
             </div>
           </div>
@@ -237,7 +235,7 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">A Quantitative Approach to Finance</h3>
-              <div class="subheading mb-3"><a onclick="trackOutboundLink('paper-5'); return false;" href="http://nbviewer.ipython.org/github/knathanieltucker/209fp/blob/master/final.ipynb">Notebook Link</a></div>
+              <div class="subheading mb-3"><a href="http://nbviewer.ipython.org/github/knathanieltucker/209fp/blob/master/final.ipynb">Notebook Link</a></div>
               <div> Chris Dantzlerward, Sam Meyer, K. Nathaniel Tucker. December 2013. </div>
             </div>
           </div>
@@ -245,7 +243,7 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Approximate Stochastic Constraint Solvers over Watts-Strogatz Network Topologies</h3>
-              <div class="subheading mb-3"><a onclick="trackOutboundLink('paper-6'); return false;" href="research/Approximate_Stochastic_Constraint_Solvers_over_Watts-Strogatz_Network_Topologies.pdf">Paper Link</a></div>
+              <div class="subheading mb-3"><a href="research/Approximate_Stochastic_Constraint_Solvers_over_Watts-Strogatz_Network_Topologies.pdf">Paper Link</a></div>
               <div>K. Nathaniel Tucker. December 2013.</div>
             </div>
           </div>
@@ -253,7 +251,7 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Empirical Analysis of Randomized Leader Elections</h3>
-              <div class="subheading mb-3"><a onclick="trackOutboundLink('paper-7'); return false;" href="research/empirical_analysis_of_randomized_leader_elections.pdf">Paper Link</a></div>
+              <div class="subheading mb-3"><a href="research/empirical_analysis_of_randomized_leader_elections.pdf">Paper Link</a></div>
               <div>K. Nathaniel Tucker. May 2015.</div>
             </div>
           </div>
@@ -261,7 +259,7 @@
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Examination of Data Based Concurrency Bug Detection</h3>
-              <div class="subheading mb-3"><a onclick="trackOutboundLink('paper-8'); return false;" href="research/examination_of_data_based_concurrency_bug_detection.pdf">Paper Link</a></div>
+              <div class="subheading mb-3"><a href="research/examination_of_data_based_concurrency_bug_detection.pdf">Paper Link</a></div>
               <div>Jefferson Lee, K. Nathaniel Tucker. May 2015.</div>
             </div>
           </div>
